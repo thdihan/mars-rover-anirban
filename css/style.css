@@ -1,0 +1,113 @@
+/* Gooogle Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+/* ----------------- 
+    Common Css 
+----------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 15px 25px;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* --------------------- 
+    Header Area Start 
+-----------------------*/
+
+header {
+    background-image: url(../images/Banner.png);
+    background-position: center;
+    height: 100vh;
+}
+
+.header-logo-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.8rem;
+
+}
+
+.logo a {
+    color: #BB141A;
+}
+
+.logo-black {
+    color: #3D3C3C;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+
+    list-style: none;
+
+
+}
+
+.main-nav ul li a {
+    box-sizing: content-box;
+    padding: 10px 15px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #3D3C3C
+}
+
+.main-nav ul li a:hover {
+    box-sizing: content-box;
+    color: #BB141A
+}
+
+.header-btn {
+    text-align: center;
+    margin-top: 70vh;
+}
+
+.rover-btn {
+    color: #3D3C3C;
+    border: 3px solid #BB141A;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.rover-btn:hover {
+    background-color: #BB141A;
+    color: #fff;
+}
+
+/* --------------------- 
+    Header Area End 
+-----------------------*/
