@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -18,12 +19,18 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
+    color: #3D3C3C;
 }
 
 a {
     text-decoration: none;
+    color: #3D3C3C;
 }
 
+section {
+    height: 100vh;
+    margin-top: 100px;
+}
 
 .container {
     width: 1280px;
@@ -37,12 +44,17 @@ a {
     font-weight: 600;
 }
 
+.red {
+    color: #BB141A;
+}
+
 /* --------------------- 
     Header Area Start 
 -----------------------*/
 
 header {
     background-image: url(../images/Banner.png);
+    background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
 }
@@ -60,12 +72,9 @@ header {
 }
 
 .logo a {
-    color: #BB141A;
-}
-
-.logo-black {
     color: #3D3C3C;
 }
+
 
 .main-nav ul {
     display: flex;
@@ -110,4 +119,105 @@ header {
 
 /* --------------------- 
     Header Area End 
+-----------------------*/
+
+
+
+/* --------------------- 
+    Main Area Start 
+-----------------------*/
+
+/* Rover Details  */
+
+.section-title {
+    font-size: 2.8rem;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title-border {
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    display: block;
+    height: 8px;
+}
+
+.border:not(:last-child) {
+    margin-right: 5px;
+}
+
+.black-border {
+    background-color: #3D3C3C;
+    width: 20px;
+}
+
+.red-border {
+    background-color: #BB141A;
+    width: 30px;
+}
+
+
+#rover {
+    margin-top: 100px;
+}
+
+.rover-details {
+    display: flex;
+    height: 80%;
+}
+
+.rover-info-1 {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.rover-info-2 {
+    width: 25%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.rover-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rover-image img {
+    width: 100%;
+}
+
+
+
+
+.rover-single-info {}
+
+.info-icon img {
+    width: 8rem;
+}
+
+.info-title {
+    margin-top: 15px;
+    font-size: 2.8rem;
+    color: #BB141A;
+}
+
+.info-details {
+    margin-top: 10px;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: #3D3C3C;
+}
+
+/* --------------------- 
+    Main Area End 
 -----------------------*/
