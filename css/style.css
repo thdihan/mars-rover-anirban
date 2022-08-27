@@ -163,6 +163,10 @@ header {
 
 #rover {
     margin-top: 100px;
+    background-image: url(../images/round-background.png);
+    background-repeat: no-repeat;
+    background-position: right -300px bottom;
+
 }
 
 .rover-details {
