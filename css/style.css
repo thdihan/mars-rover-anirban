@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    transition: 1s;
 }
 
 html {
@@ -137,6 +138,7 @@ header {
 }
 
 .title-border {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
 }
@@ -220,6 +222,81 @@ header {
     font-size: 2rem;
     line-height: 2.8rem;
     color: #3D3C3C;
+}
+
+
+
+#achievements {
+    background-image: url(../images/trophy-GRAY.png);
+    background-position: right -250px bottom 200px;
+    background-repeat: no-repeat;
+}
+
+.achievements-area {
+
+    position: relative;
+    z-index: -1;
+    margin-top: 100px;
+}
+
+.achievement-image {
+    width: 70%;
+}
+
+.achievement-image img {
+    width: 100%;
+    ;
+}
+
+.achievement-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.achievement-details {
+    font-size: 2.4rem;
+    text-align: right;
+    margin-top: 100px;
+    font-weight: 500;
+}
+
+.achievement-details p {
+    margin-bottom: 20px
+}
+
+
+.achievement-title {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    z-index: 1;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 35px;
+    -webkit-box-shadow: 4px 10px 16px 0px #535252;
+    box-shadow: 4px 10px 16px 0px #bbb8b8;
+    background-color: #fff;
+}
+
+.achiement-icon {
+    width: 20%;
+}
+
+.achiement-icon img {
+    width: 80%;
+}
+
+.achievement-text {
+    text-align: right;
+    width: 80%;
+    font-size: 1.8rem;
+    line-height: 4.4rem;
+}
+
+.achievement-text span {
+    font-size: 4rem;
 }
 
 /* --------------------- 
