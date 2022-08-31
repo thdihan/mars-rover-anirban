@@ -58,13 +58,29 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.header-logo-nav {
+.sticky-header {
     display: flex;
     justify-content: space-between;
     padding: 25px 0;
     align-items: center;
+
+    width: 1280px;
+
+
+}
+
+.sticky-header-area {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 10000;
 }
 
 .logo {
@@ -103,7 +119,6 @@ header {
 
 .header-btn {
     text-align: center;
-    margin-top: 70vh;
 }
 
 .rover-btn {
@@ -111,6 +126,9 @@ header {
     border: 3px solid #BB141A;
     border-radius: 50px;
     transition: 0.5s;
+
+    position: relative;
+    top: 250px;
 }
 
 .rover-btn:hover {
@@ -133,7 +151,7 @@ header {
 .section-title {
     font-size: 2.8rem;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 
@@ -394,6 +412,93 @@ header {
     font-size: 2.4rem;
 }
 
+
+#events {
+    background-color: #BB141A;
+}
+
+#events h2 {
+    color: #fff;
+    margin-top: 130px;
+}
+
+
+.event-card {
+
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px; */
+    align-items: center;
+    height: 60vh;
+
+
+}
+
+.card {
+    flex: 1;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.card img {
+    width: 100%;
+}
+
+#sponsor h2 {
+    margin-top: 20px;
+}
+
+.sponsor-area {
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
 /* --------------------- 
     Main Area End 
 -----------------------*/
+
+
+footer {
+    background-color: #3D3C3C;
+
+}
+
+.footer-area {
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 100px;
+}
+
+.footer-logo {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.footer-red {
+    color: #fa3036;
+}
+
+.footer-logo a {
+    color: #fff;
+}
+
+.mail {
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    color: #fff;
+    font-size: 2rem;
+    padding: 15px;
+    background-color: rgb(34, 33, 33);
+}
