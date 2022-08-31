@@ -299,6 +299,101 @@ header {
     font-size: 4rem;
 }
 
+
+#about {}
+
+.about-area {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.about-image {
+
+    position: relative;
+    z-index: 2;
+    width: 50%;
+
+}
+
+.about-image::before {
+    content: "";
+    position: absolute;
+    height: 95%;
+    width: 88%;
+    border: 10px solid #BB141A;
+}
+
+.about-image img {
+    position: relative;
+    left: 70px;
+    top: 70px;
+    z-index: 3;
+    width: 90%;
+}
+
+.about-information {
+    width: 50%;
+    padding: 130px 10px 10px 100px;
+}
+
+.about-information h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.about-information p {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+}
+
+.about-btn {
+    display: inline-block;
+    background-color: #BB141A;
+    color: #fff;
+    margin-top: 20px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+
+.teams {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 50px;
+}
+
+.single-team {
+    text-align: center;
+
+}
+
+.team-image {
+    width: 100%;
+    height: 280px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px 0px rgba(211, 209, 209, 0.75), -4px -4px 10px 0px rgba(211, 209, 209, 0.75);
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(211, 209, 209, 0.75), -4px -4px 10px 0px rgba(211, 209, 209, 0.75);
+    -moz-box-shadow: 4px 4px 10px 0px rgba(211, 209, 209, 0.75), -4px -4px 10px 0px rgba(211, 209, 209, 0.75);
+}
+
+.team-image img {
+    width: 70%;
+    height: 70%;
+}
+
+.single-team h2 {
+    font-size: 2.4rem;
+}
+
 /* --------------------- 
     Main Area End 
 -----------------------*/
